@@ -64,10 +64,12 @@ public class Main {
         System.out.println("Задача 4");
 
         int month = 1;
+        int payment = 15000;
         int total = 15000;
 
         do {
             total = total + total * 7 / 100;
+            total = total + payment;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
             month++;
         }
@@ -78,10 +80,12 @@ public class Main {
         System.out.println("Задача 5");
 
         int month = 1;
+        int payment = 15000;
         int total = 15000;
 
         do {
             total = total + total * 7 / 100;
+            total = total + payment;
             month++;
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
@@ -94,10 +98,13 @@ public class Main {
         System.out.println("Задача 6");
 
         int month = 1;
+        int payment = 15000;
         int total = 15000;
+
 
         while (month <= 9 * 12) {
             total = total + total * 7 / 100;
+            total = total + payment;
             month++;
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
